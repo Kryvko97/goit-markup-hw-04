@@ -115,9 +115,11 @@ color:var(--title-color);
 .contakt-list{
 text-align: center;
 margin-left: auto;
+
 }
 .contakt-item:not(:last-child){
   margin-right:50px;
+ 
 }
 
 .contakt-link {
@@ -126,6 +128,12 @@ font-size: 14px;
 line-height:calc(16/14);
 letter-spacing: 0.02em;
 color:var(--color-ddress);
+
+}
+.contakt-link-wrap{
+  display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .contakt-link:hover,
@@ -143,9 +151,10 @@ color:var(--text-link-color-hover);
    linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4))
-   ,url(/imeges/bagraudhero.jpg);
+   ,url(../imeges/bagraudhero.jpg);
    width: 1600px;
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
    background-repeat:no-repeat;
    background-position: center;
    background-size: cover;
@@ -186,11 +195,7 @@ background: var(--buton-background-color-hover);
 }
 /*-----------ABOUT_Наші переваги-------------*/
 .about {
-  width: 1600px;
-   margin: auto;
-   background-repeat:no-repeat;
-   background-position: center;
-   background-size: cover;
+  
 }
 .wrap{
   display: flex;
@@ -239,11 +244,7 @@ color:var(--text-color);
 }
 /*--------------------PROJECT----------------------------*/
 .project 
-{width: 1600px;
-   margin: auto;
-   background-repeat:no-repeat;
-   background-position: center;
-   background-size: cover;
+{
   padding-top: 0;
 }
 .project-title {
@@ -263,11 +264,7 @@ margin-bottom:50px;
 
 /*---------------------TEAM---------------------------------*/
 .team {
-  width: 1600px;
-   margin: auto;
-   background-repeat:no-repeat;
-   background-position: center;
-   background-size: cover;
+  
   background-color: var(--team-backgrount-color);
 }
 .team-title {
@@ -332,6 +329,7 @@ padding-bottom: 30px;}
 }
 .team-icon-icon{
   fill: currentColor;
+  margin-right: 10px;
 
   
 }
@@ -340,11 +338,7 @@ padding-bottom: 30px;}
   color: #FFFFFF;
 }
 /*-------------ПОСТІЙНІ_КЛІЄНТИ------------*/
-.customers {width: 1600px;
-   margin: auto;
-   background-repeat:no-repeat;
-   background-position: center;
-   background-size: cover;
+.customers {
 }
 .customers-title {
 }
@@ -373,17 +367,13 @@ padding-bottom: 30px;}
 }
 
 .customers-link:hover,.customers-link:focus{
- border: 2px solid #2196F3;
+ border: 1px solid #2196F3;
  color: #2196F3;
 }
 /*-------------ФУТЕР--------------*/
 .footer {
-  width: 1600px;
-   margin: auto;
-   background-repeat:no-repeat;
-   background-position: center;
-   background-size: cover;
-  background-color: #212121;
+  
+  background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -393,7 +383,6 @@ padding-bottom: 30px;}
   
 }
 .footer-list{
-  /* margin-top: 20px  ; */
 }
 
 .footer-iten:not(:last-child) {
@@ -428,6 +417,7 @@ color: var(--color-h1-title);
 .footer-adress{
   font-style: normal;
   display: flex;
+  
 }
 .footer-icon-box{
   margin-left: 70px;
@@ -461,13 +451,14 @@ margin-bottom: 20px;
 .footer-icon-icon{
   fill: currentColor;
 }
-/* проблема */
+
 .footer-icon-link:hover,.footer-icon-link:focus{
   background-color: #2196F3;
   color: #FFFFFF;
 }
-.test{
+.footer-box{
   display: flex;
+  align-items:baseline;
 }
 /*-----------PORTFOLIO-----------*/
 .work {
@@ -504,18 +495,29 @@ color:var(--buton-work-color);
 background:var(--buton-work-backgrount-color);
 border-radius: 4px;
 border: transparent;
+padding: 6px 22px;
+
 }
 .work-btb:focus,
 .work-btb:hover{
 color:var(--buton-work-color-hover);
 background:var(--buton-work-backgrount-hover);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .work-list-projekts {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  
-  
+}
+.work-item-link{
+  display: block;
+}
+.work-item-link:hover,
+.work-item-link:focus{
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-item-projekts {
@@ -524,11 +526,13 @@ background:var(--buton-work-backgrount-hover);
   margin-left: 15px;
   width: calc(100% / 3 - 30px);
   margin: 15px;
+  
 
 }
 .work-description{
 padding: 20px 24px;
-border: 1px solid #EEEEEE;;
+border: 1px solid #EEEEEE;
+
 }
 .work-after-title {
 font-weight: 700;
